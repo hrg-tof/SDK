@@ -4,7 +4,7 @@
 #include <helper.h>
 
 //#define PCL_VISUALIZER /*** 打开该宏，需要配置pcl库，可将深度图转换为PCL点云 ***、
-//#define OPENCV_VISUALIZER /*** 打开该宏，需要配置Opencv库，显示渲染后的深度图像及幅度图像 ***/
+#define OPENCV_VISUALIZER /*** 打开该宏，需要配置Opencv库，显示渲染后的深度图像及幅度图像 ***/
 
 #ifdef OPENCV_VISUALIZER
 #include <opencv/cv.hpp>
@@ -41,7 +41,7 @@ int main()
 
     Hrg_Dev_Info dev;
     dev.type = Dev_Eth;
-    dev.Info.eth.addr = "192.168.0.6";
+    dev.Info.eth.addr = "192.168.1.6";
     dev.Info.eth.port = 8567;
     dev.frameReady = NULL; //callback function
 
@@ -51,6 +51,7 @@ int main()
         printf("open device failed!\n");
         return -1;
     }
+	Hrg_SetAmplitudeThreshold(&handle, 100);
 
     //Hrg_SetRangeMode(&handle, Mode_Range_S);
 
@@ -79,12 +80,13 @@ int main()
     transform (1,1) = cos (theta);
     pcl::PointCloud<pcl::PointXYZ>::Ptr point_cloud_ptr(new pcl::PointCloud<pcl::PointXYZ>);
 #endif
-
+	//Hrg_GetAmplitudeThreshold()
     while(true)
     {
         if(0 == Hrg_GetFrame(&handle, &frame))
         {
             printf("frame index:%d\n", frame.index);
+
 			/*** Get depth data and amplitude data from the a frame. ***/
             Hrg_GetDepthF32andAmplitudeData(&handle,
                                             &frame,

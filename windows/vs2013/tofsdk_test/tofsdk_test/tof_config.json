@@ -1,0 +1,49 @@
+{
+   "DevId" : 1,
+   "FirmwareInfo" : "V1.1",
+   "InternalPara" : [ 3.3, 0.015, 144.0, 120.0 ],
+   "PlatformInfo" : "HRG-QV-A1-V1.0",
+   "RangeModeDefault" : 3,
+   "RangeModeList" : {
+      "Count" : 7,
+      "List" : [ 0, 1, 2, 3, 4, 5, 6 ]
+   },
+   "RangeModeS" : {
+      "CalibTemp" : 0,
+      "Gain" : 1,
+      "GlobalOffset" : 1240,
+      "IntegrationTime" : 500,
+      "ModulationFrequency" : 40
+   },
+   "RangeModeM" : {
+      "CalibTemp" : 0,
+      "Gain" : 2,
+      "GlobalOffset" : 1230,
+      "IntegrationTime" : 600,
+      "ModulationFrequency" : 40
+   },
+   "RangeModeL" : {
+      "CalibTemp" : 0,
+      "Gain" : 4,
+      "GlobalOffset" : 1250,
+      "IntegrationTime" : 500,
+      "ModulationFrequency" : 40
+   },
+   "RangeModeXL" : {
+      "CalibTemp" : 0,
+      "Gain" : 4,
+      "GlobalOffset" : 1350,
+      "IntegrationTime" : 800,
+      "ModulationFrequency" : 20
+   },
+   "RangeModeCustom" : {
+      "CalibTemp" : 0,
+      "Gain" : 2,
+      "GlobalOffset" : 1300,
+      "IntegrationTime" : 500,
+      "ModulationFrequency" : 40
+   },
+   "Resolution" : "QVGA",
+   "SoftwareInfo" : "V1.1",
+   "WaveLength" : "850nm"
+}

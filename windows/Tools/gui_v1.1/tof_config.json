@@ -1,47 +1,47 @@
 {
-   "DevId" : 22,
+   "DevId" : 6,
    "FirmwareInfo" : "V1.1",
-   "InternalPara" : [ 3.3, 0.015, 144.0, 120.0 ],
+   "InternalPara" : [ 7.76, 0.015, 144.0, 120.0 ],
    "PlatformInfo" : "HRG-QV-A1-V1.0",
-   "RangeModeDefault" : 3,
+   "RangeModeDefault" : 0,
    "RangeModeList" : {
-      "Count" : 6,
-      "List" : [ 0, 1, 2, 3, 4, 6 ]
+      "Count" : 7,
+      "List" : [ 0, 1, 2, 3, 4, 5, 6 ]
    },
    "RangeModeS" : {
       "CalibTemp" : 0,
       "Gain" : 1,
-      "GlobalOffset" : 1100,
-      "IntegrationTime" : 500,
+      "GlobalOffset" : 1300,
+      "IntegrationTime" : 700,
       "ModulationFrequency" : 40
    },
    "RangeModeM" : {
       "CalibTemp" : 0,
       "Gain" : 2,
-      "GlobalOffset" : 1100,
-      "IntegrationTime" : 600,
+      "GlobalOffset" : 1300,
+      "IntegrationTime" : 800,
       "ModulationFrequency" : 40
    },
    "RangeModeL" : {
       "CalibTemp" : 0,
       "Gain" : 4,
-      "GlobalOffset" : 1100,
-      "IntegrationTime" : 500,
+      "GlobalOffset" : 1300,
+      "IntegrationTime" : 800,
       "ModulationFrequency" : 40
    },
    "RangeModeXL" : {
       "CalibTemp" : 0,
       "Gain" : 4,
-      "GlobalOffset" : 1390,
-      "IntegrationTime" : 800,
+      "GlobalOffset" : 1400,
+      "IntegrationTime" : 1100,
       "ModulationFrequency" : 20
    },
    "RangeModeCustom" : {
       "CalibTemp" : 0,
-      "Gain" : 4,
-      "GlobalOffset" : 2000,
-      "IntegrationTime" : 1300,
-      "ModulationFrequency" : 12
+      "Gain" : 2,
+      "GlobalOffset" : 1300,
+      "IntegrationTime" : 500,
+      "ModulationFrequency" : 40
    },
    "Resolution" : "QVGA",
    "SoftwareInfo" : "V1.1",
